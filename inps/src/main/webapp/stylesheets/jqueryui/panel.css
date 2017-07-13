@@ -1,0 +1,31 @@
+.pui-panel .pui-panel-titlebar {
+	background: #016AA3;
+	color: #FFF;
+	border: 2px solid #002C53;
+}
+.pui-panel .pui-panel-subtitlebar {
+	background: #016aa3;
+	color: #FFF;
+	border: 1px solid #0073ea;
+        padding: 2px;
+}
+
+.pui-panel .pui-panel-content {
+	color: #666;
+}
+.pui-subpanel {  
+    margin: 2px 0px;
+    border-color:#bcccd6;
+}
+.pui-subpanel .pui-subpanel-subtitlebar {
+    background: #e2eaef;
+    padding: 2px 5px;
+}
+.pui-subpanel .pui-subpanel-content {
+    color: #666;
+    padding: 5px;;
+}
+.pui-panel .pui-subpanel-content {
+    color: #666;
+    padding: 0em 1em;
+}

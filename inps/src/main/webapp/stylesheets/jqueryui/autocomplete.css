@@ -1,0 +1,10 @@
+.ui-autocomplete-input
+{
+	outline: none !important;
+}
+
+.ui-autocomplete .ui-state-hover,
+.ui-autocomplete .ui-state-focus
+{
+	background: #002C53 !important;
+}

@@ -1,0 +1,55 @@
+.pui-paginator
+{
+	background: #DDD;
+}
+
+.pui-paginator-page,
+.pui-paginator-prev,
+.pui-paginator-next,
+.pui-paginator-first,
+.pui-paginator-last
+{
+	background: #002C53 !important;
+	border: 1px solid #016AA3 !important;
+	color: #FFF !important;
+	border-radius: 4px;
+}
+
+.pui-paginator-page.ui-state-active,
+.pui-paginator-page.ui-state-hover,
+.pui-paginator-prev.ui-state-active,
+.pui-paginator-prev.ui-state-hover,
+.pui-paginator-next.ui-state-active,
+.pui-paginator-next.ui-state-hover,
+.pui-paginator-first.ui-state-active,
+.pui-paginator-first.ui-state-hover,
+.pui-paginator-last.ui-state-active,
+.pui-paginator-last.ui-state-hover
+{
+	background: #016AA3 !important;
+	border: 1px solid #002C53 !important;
+}
+
+.pui-paginator-prev span
+{
+	background-image: url(images/ui-icons_ffffff_256x240.png) !important;
+	background-position: -48px -160px !important;
+}
+
+.pui-paginator-next span
+{
+	background-image: url(images/ui-icons_ffffff_256x240.png) !important;
+	background-position: -32px -160px !important;
+}
+
+.pui-paginator-first span
+{
+	background-image: url(images/ui-icons_ffffff_256x240.png) !important;
+	background-position: -80px -160px !important;
+}
+
+.pui-paginator-last span
+{
+	background-image: url(images/ui-icons_ffffff_256x240.png) !important;
+	background-position: -64px -160px;;
+}

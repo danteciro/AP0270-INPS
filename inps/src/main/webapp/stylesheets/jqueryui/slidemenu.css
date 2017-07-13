@@ -1,0 +1,20 @@
+.pui-slidemenu .pui-menu-list .pui-menuitem-link.ui-state-hover
+{
+	background: #002C53;
+	color: #FFF;
+}
+
+.pui-slidemenu .pui-slidemenu-backward
+{
+	color: #002C53;
+}
+
+.pui-slidemenu  .ui-icon
+{
+	background-image: url(images/ui-icons_454545_256x240.png);
+}
+
+.pui-slidemenu  .ui-state-hover .ui-icon
+{
+	background-image: url(images/ui-icons_ffffff_256x240.png);
+}

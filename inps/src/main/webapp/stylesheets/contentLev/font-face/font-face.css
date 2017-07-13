@@ -1,0 +1,70 @@
+/*Cuerpo de correo*/
+
+
+a {
+  color: #444444 !important;
+}
+
+a:hover, a:focus {
+  color: #444444 !important;
+}
+
+.wrap-correo {
+	font-family: 'Font_impresion', Arial, Tahoma;
+}
+
+.main-wrap-correo .top-wrap-correo {
+	background-color: white !important;
+	color: #0663ad !important;
+	border-top: 1px solid #CCCCCC !important;
+	border-left: none !important;
+	border-right: none !important; 
+	border-bottom: 1px solid #CCCCCC !important;
+	color: #444444 !important;
+}
+
+.main-wrap-correo .top-wrap-correo:before {
+	display: none !important;
+}
+
+span.tag-correo.resoluciones-no {
+	border: 1px solid #999999 !important;
+	background: white !important;
+	color: #444444 !important;
+}
+
+.main-wrap-correo .center-wrap-correo .title-center-wrap-correo {
+	color: #444444 !important;
+}
+
+.main-wrap-correo .foot-wrap-correo {
+	background-color: white !important;
+	border-top: 1px solid #CCCCCC !important;
+	border-left: none !important;
+	border-right: none !important;
+	border-bottom: 1px solid #CCCCCC !important;
+	color: #444444 !important;
+	position: relative;
+}
+
+.main-wrap-correo .foot-wrap-correo:before {
+	display: none !important;
+}
+
+.main-wrap-correo .foot-wrap-correo .txt {
+	min-height: inherit !important;
+	color: #444444 !important;
+}
+
+.main-wrap-correo .foot-wrap-correo .logo-white {
+	display: none !important;
+}
+
+/*fon face**/
+
+@font-face {
+	font-family: 'Font_impresion';
+	src: url('Spranq_eco_sans.eot?#iefix') format('embedded-opentype'),  url('Spranq_eco_sans.woff') format('woff'), url('Spranq_eco_sans.ttf')  format('truetype'), url('Spranq_eco_sans.svg#Spranq_eco_sans') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

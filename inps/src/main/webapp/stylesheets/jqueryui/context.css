@@ -1,0 +1,25 @@
+.pui-menu-list .pui-menuitem-active,
+.pui-menu-list .pui-menuitem-active > a
+{
+	background: #002C53;
+}
+
+.pui-menu-list .ui-icon
+{
+	background-image: url(images/ui-icons_454545_256x240.png);
+}
+
+.pui-menu-list .pui-menuitem-link
+{
+	border: none !important;
+}
+
+.pui-menu-list .ui-state-hover .ui-icon
+{
+	background-image: url(images/ui-icons_ffffff_256x240.png);
+}
+
+.ui-widget-content .ui-icon
+{
+	background-image: url(images/ui-icons_454545_256x240.png);
+}

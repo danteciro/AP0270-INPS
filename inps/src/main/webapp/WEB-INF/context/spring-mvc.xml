@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:flow="http://www.springframework.org/schema/webflow-config"
+       xmlns:jms="http://www.springframework.org/schema/jms"
+       xmlns:jee="http://www.springframework.org/schema/jee"
+       xmlns:lang="http://www.springframework.org/schema/lang"
+       xmlns:osgi="http://www.springframework.org/schema/osgi"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:p="http://www.springframework.org/schema/p"
+	   xmlns:task="http://www.springframework.org/schema/task"
+	   	
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+       http://www.springframework.org/schema/webflow-config http://www.springframework.org/schema/webflow-config/spring-webflow-config-3.0.xsd
+       http://www.springframework.org/schema/jms http://www.springframework.org/schema/jms/spring-jms-3.0.xsd
+       http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-3.0.xsd
+       http://www.springframework.org/schema/lang http://www.springframework.org/schema/lang/spring-lang-3.0.xsd
+       http://www.springframework.org/schema/osgi http://www.springframework.org/schema/osgi/spring-osgi-3.0.xsd
+       http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
+       http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.0.xsd
+       http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd
+       http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task-4.0.xsd">
+
+    <!-- Scans the classpath of this application for @Components to deploy as beans -->
+    
+     <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer" lazy-init="false">
+        <property name="locations">
+            <list>
+                <value>file:/data/properties/inpsweb.properties</value>
+                <value>file:/data/properties/nps_parametros.properties</value>
+            </list>
+        </property>
+    </bean>
+    
+    <!-- OSINE_SFS-791 - RSIS 46-47 - Inicio -->
+    <!-- Tarea Programada -->
+    <!-- <bean id="tareaProgramadaTask" class="gob.osinergmin.inpsweb.service.task.TareaProgramadaTask" /> 
+	<task:scheduled-tasks>
+	    <task:scheduled ref="tareaProgramadaTask" method="tareaProgNotiOblIncumpSubsana" cron="${task.cron}"/>
+		<task:scheduled ref="tareaProgramadaTask" method="tareaProgCancelacionRH" cron="${task.cron}"/>  
+                <task:scheduled ref="tareaProgramadaTask" method="tareaProgEjecucionHabilitacionCierre" cron="${task.cron}"/>  
+	</task:scheduled-tasks>-->
+	<!-- OSINE_SFS-791 - RSIS 46-47 - Fin -->		
+    
+    <context:component-scan base-package="gob.osinergmin.inpsweb.controller" />
+    <context:component-scan base-package="gob.osinergmin.inpsweb.gsm.controller" />
+    <context:component-scan base-package="gob.osinergmin.inpsweb.levantamiento.controller" />
+<!--    <context:component-scan base-package="gob.osinergmin.inpsweb.controller.common" />-->
+
+    <!-- Configures the @Controller programming model -->
+    <mvc:annotation-driven />
+
+    <!-- Saves a locale change using a cookie -->
+    <bean id="localeResolver" class="org.springframework.web.servlet.i18n.CookieLocaleResolver" />
+
+    <!-- multipartResolver -->
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">        
+    </bean>
+    
+    <!-- Resolves view names to protected .jsp resources within the /WEB-INF/views directory -->
+
+    <!-- Default View Resolver -->
+    <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
+        <property name="contentType" value="text/html; charset=UTF-8"/>
+        <property name="prefix" value="/WEB-INF/views/"/>
+        <property name="suffix" value=".jsp"/>
+        <property name="order" value="1" />
+    </bean>
+
+    <bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource">
+        <property name="basenames">
+            <list>
+                <value>messages</value>
+            </list>
+        </property>
+    </bean>
+
+</beans>

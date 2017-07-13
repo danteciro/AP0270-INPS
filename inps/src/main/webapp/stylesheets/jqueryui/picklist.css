@@ -1,0 +1,50 @@
+.pui-picklist .pui-picklist-listwrapper
+{
+	position: relative;
+}
+
+.pui-picklist li.ui-state-highlight
+{
+	background: #016AA3;
+	color: #FFF;
+}
+
+.pui-picklist .pui-picklist-list li
+{
+	border: 1px solid transparent;
+}
+
+.pui-picklist li.ui-state-hover
+{
+	background: #3B4959;
+}
+
+.pui-picklist .pui-picklist-list
+{
+	border: 2px solid #3B4959;
+	box-shadow: none;
+}
+
+.pui-picklist .ui-icon
+{
+	background-image: url(images/ui-icons_ffffff_256x240.png);
+}
+
+.pui-picklist .pui-picklist-button-add,
+.pui-picklist .pui-picklist-button-remove,
+.pui-picklist .pui-picklist-button-addall,
+.pui-picklist .pui-picklist-button-removeall
+{
+	background: #3B4959;
+	border-radius: 4px;
+	outline: none !important;
+	border: 1px solid #016AA3;
+}
+
+.pui-picklist .pui-picklist-button-add:hover,
+.pui-picklist .pui-picklist-button-remove:hover,
+.pui-picklist .pui-picklist-button-addall:hover,
+.pui-picklist .pui-picklist-button-removeall:hover
+{
+	background: #016AA3;
+}

@@ -1,0 +1,22 @@
+.pui-accordion .pui-accordion-header
+{
+	border: none;
+	border-bottom: 1px solid transparent;
+}
+
+.pui-accordion .pui-accordion-header a
+{
+	border: 2px solid #002C53;
+	color: #FFF !important;
+	background: #016AA3;
+}
+
+.pui-accordion .pui-accordion-header .ui-icon
+{
+	background-image: url(images/ui-icons_ffffff_256x240.png);
+}
+
+.pui-accordion .pui-accordion-header
+{
+	color: #666;
+}

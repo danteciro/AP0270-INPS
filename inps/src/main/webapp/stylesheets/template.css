@@ -1,0 +1,27 @@
+#header{
+	background: url('/inps/images/banner_nuevo.png') no-repeat; 
+	background-size:100%; 
+	padding: 5px 0px 0px 0px; 
+	position: relative;
+	width: 100% !important;
+	height: 100% !important;
+        min-width: 1000px;
+}
+#logoWrapper{
+	width:30%;
+	text-align:left;
+}
+#logo{
+	width: 100%;
+}
+#userWrapper{
+	position:absolute; 
+	right:10px; 
+	bottom:0px; 
+	height:60px; 
+	overflow:hidden; 
+	color:white !important;
+}
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
+    font-family: Calibri,Arial,sans-serif;
+}

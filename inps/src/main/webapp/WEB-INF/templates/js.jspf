@@ -1,0 +1,15 @@
+<script type="text/javascript" src="/inps/javascript/third-party/primeui/jquery-1.7.js"></script>
+<script type="text/javascript" src="/inps/javascript/third-party/primeui/jquery-ui-1.10.3.custom.js"></script>
+<script type="text/javascript" src="/inps/javascript/third-party/jqgrid/i18n/grid.locale-es.js"></script>
+<script type="text/javascript" src="/inps/javascript/third-party/jqgrid/jquery.jqGrid.js"></script>
+<script type="text/javascript" src="/inps/javascript/third-party/primeui/primeui-1.0.js"></script>
+<script type="text/javascript" src="/inps/javascript/third-party/scrollbar/jScrollbar.jquery.js"></script>
+<script type="text/javascript" src="/inps/javascript/third-party/scrollbar/jquery-mousewheel.js"></script>
+<script type="text/javascript" src="/inps/javascript/third-party/jquery.fancytree.js"></script>
+<script type="text/javascript" src="/inps/javascript/third-party/alphanum/jquery.alphanum.js"></script>
+<script type="text/javascript" src="/inps/javascript/third-party/jqueryForm/jquery.form.js"></script>
+<script type="text/javascript" src="/inps/javascript/app/general.js"></script>
+<script type="text/javascript" src="/inps/javascript/third-party/primeui/jquery.ui.timepicker.js"></script>
+<!-- <script type="text/javascript" src="/inps/javascript/third-party/primeui/jquery.timepicker.js"></script> -->
+<script type="text/javascript" src="/inps/javascript/third-party/jquery-download.js"></script>	
+

@@ -1,0 +1,46 @@
+.pui-galleria
+{
+	border: 2px solid #002C53;
+}
+
+.pui-galleria .pui-galleria-filmstrip-wrapper
+{
+	padding-bottom: 5px;
+	padding-right: 5px;
+}
+
+.pui-galleria-caption
+{
+	left: 0;
+}
+
+.pui-galleria-frame
+{
+	opacity: 1 !important;
+}
+
+.pui-galleria-frame-content
+{
+	overflow: visible;
+}
+
+.pui-galleria .pui-galleria-frame-content img
+{
+	border: 2px solid transparent;
+	opacity: 1 !important;
+}
+
+.pui-galleria .pui-galleria-frame.pui-galleria-frame-active img
+{
+	border: 2px solid #016AA3;
+}
+
+.pui-galleria .pui-galleria-caption
+{
+	background-color: rgba(0,44,83,0.5);
+}
+
+.pui-galleria  .ui-icon
+{
+	background-image: url(images/ui-icons_0073ea_256x240.png);
+}

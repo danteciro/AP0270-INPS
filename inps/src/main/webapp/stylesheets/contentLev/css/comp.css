@@ -1,0 +1,168 @@
+
+
+/*--------------------------------------------------------------------------------------------------------- 
+*@name: Componente
+*@description : Un componente es una pieza que se puede reutilizar
+**//*---------------------------------------------------------------------------------------------------- */
+
+/*----user-name-dropdown*/
+/*******************************/
+
+.user-name-dropdown .dropdown-menu,
+.correo-dropdown .dropdown-menu,
+.notificaciones-dropdown .dropdown-menu,
+.calendario-dropdown .dropdown-menu,
+.filter-dropdown .dropdown-menu {
+	margin:0px;
+	-webkit-box-shadow: 5px 5px rgba(44, 53, 66, 0.2);
+	box-shadow: 5px 5px rgba(44, 53, 66, 0.2);
+	-moz-box-shadow: 5px 5px rgba(44, 53, 66, 0.2);
+	width:100%;
+}
+
+.user-name-dropdown.open{
+	-webkit-box-shadow: inset 0px 0px 19px 0px rgba(50, 50, 50, 0.28);
+	-moz-box-shadow: inset 0px 0px 19px 0px rgba(50, 50, 50, 0.28);
+	box-shadow: inset 0px 0px 19px 0px rgba(50, 50, 50, 0.28);
+}
+
+.user-name-dropdown .dropdown-menu-right {
+	right: -1px;
+}
+
+.user-name-dropdown .dropdown-menu{
+	padding: 0px;
+	width: 210px;
+	top: 60px;
+	border-radius: 0px;
+}
+
+.user-name-dropdown .dropdown-menu:before {
+	content:'';
+	background:url('../images/system/arrow.png') no-repeat;
+	width: 16px;
+	height: 9px;
+	position: absolute;
+	right: 16px;
+	top: -9px;
+}
+
+/**/
+
+.correo-dropdown {
+	display: none;
+}
+
+.correo-dropdown.open{
+	-webkit-box-shadow: inset 0px 0px 19px 0px rgba(50, 50, 50, 0.28);
+	-moz-box-shadow: inset 0px 0px 19px 0px rgba(50, 50, 50, 0.28);
+	box-shadow: inset 0px 0px 19px 0px rgba(50, 50, 50, 0.28);
+}
+
+.correo-dropdown .dropdown-menu-right {
+	right: -1px;
+}
+
+.correo-dropdown .dropdown-menu{
+	padding: 0px;
+	width: 300px;
+	top: 57px;
+	border-radius: 0px;
+}
+
+.correo-dropdown .dropdown-menu:before {
+	content:'';
+	background:url('../images/system/arrow.png') no-repeat;
+	width: 16px;
+	height: 9px;
+	position: absolute;
+	right: 20px;
+	top: -9px;
+}
+
+/**/
+
+.notificaciones-dropdown.open{
+	-webkit-box-shadow: inset 0px 0px 19px 0px rgba(50, 50, 50, 0.28);
+	-moz-box-shadow: inset 0px 0px 19px 0px rgba(50, 50, 50, 0.28);
+	box-shadow: inset 0px 0px 19px 0px rgba(50, 50, 50, 0.28);
+}
+
+.notificaciones-dropdown .dropdown-menu-right {
+	right: -1px;
+}
+
+.notificaciones-dropdown .dropdown-menu{
+	padding: 0px;
+	width: 300px;
+	top: 57px;
+	border-radius: 0px;
+}
+
+.notificaciones-dropdown .dropdown-menu:before {
+	content:'';
+	background:url('../images/system/arrow.png') no-repeat;
+	width: 16px;
+	height: 9px;
+	position: absolute;
+	right: 23px;
+	top: -9px;
+}
+
+/**/
+
+.calendario-dropdown.open{
+	-webkit-box-shadow: inset 0px 0px 19px 0px rgba(50, 50, 50, 0.28);
+	-moz-box-shadow: inset 0px 0px 19px 0px rgba(50, 50, 50, 0.28);
+	box-shadow: inset 0px 0px 19px 0px rgba(50, 50, 50, 0.28);
+}
+
+.calendario-dropdown .dropdown-menu-right {
+	right: 0px;
+}
+
+.calendario-dropdown .dropdown-menu{
+	padding: 0px;
+	width: 300px;
+	top: 57px;
+	border-radius: 0px;
+}
+
+.calendario-dropdown .dropdown-menu:before {
+	content:'';
+	background:url('../images/system/arrow.png') no-repeat;
+	width: 16px;
+	height: 9px;
+	position: absolute;
+	right: 20px;
+	top: -9px;
+}
+
+/**/
+
+.filter-dropdown.open{
+	-webkit-box-shadow: inset 0px 0px 19px 0px rgba(50, 50, 50, 0.10);
+	-moz-box-shadow: inset 0px 0px 19px 0px rgba(50, 50, 50, 0.10);
+	box-shadow: inset 0px 0px 19px 0px rgba(50, 50, 50, 0.10);
+}
+
+.filter-dropdown .dropdown-menu-left {
+	left: -1px;
+}
+
+.filter-dropdown .dropdown-menu{
+	padding: 0px;
+	width: 210px;
+	top: 39px;
+	border-radius: 0px;
+}
+
+.filter-dropdown .dropdown-menu:before {
+	content:'';
+	background:url('../images/system/arrow.png') no-repeat;
+	width: 16px;
+	height: 9px;
+	position: absolute;
+	left: 11px;
+	top: -9px;
+}

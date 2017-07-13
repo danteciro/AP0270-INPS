@@ -1,0 +1,559 @@
+/**
+* Resumen		
+* Objeto		: general.css
+* Descripción		: general
+* Fecha de Creación	: 
+* PR de Creación	: OSINE_SFS-480
+* Autor			: GMD
+* =====================================================================================================================================================================
+* Modificaciones |
+* Motivo         |  Fecha        |   Nombre                     |     Descripción
+* =====================================================================================================================================================================
+* OSINE_SFS-480  |   25/05/2016  |    Mario Dioses Fernandez    |     Construir formulario de envio a Mensajeria, consumiendo WS
+* OSINE791       |   26/08/2016  |    Zosimo Chaupis            |     Tabs para modulo de Supervision Dsr, se agrego css para clase de botones de navegacion
+* OSINE791-RSIS4 |   05/10/2016  |    Zosimo Chaupis            |     css radio por verificar datos iniciales
+* OSINE_MAN-001  |  15/06/2017   |   Claudio Chaucca Umana::ADAPTER      |     Cambiar el color del boton Guardar al deshabilitar
+* OSINE_MAN_DSR_0034|  18/06/2017   |   Carlos Quijano Chavez::ADAPTER      |    Redefinir el estilo jqqrow para mejorar la visualizacion de comentarios                              
+*/
+
+/* OSINE791 RSIS9 - Inicio */
+.btnGrid{border: 1px solid #ddd;margin: 1px 3px 0px;}
+.btnGrid:hover{border:1px solid #aaa;}
+#frmComInc{
+    min-width: 200px;
+    min-height: 40px;
+}
+.tblChk table{border-collapse: collapse;}
+.tblChk tr td{border:1px solid #dddddd;padding: 2px;}
+.tblChk.head{padding-right: 20px;}
+.tblChk.head tr td{background: #f6f6f6 url("images/ui-bg_highlight-soft_100_f6f6f6_1x100.png") repeat-x scroll 50% 50%;height: 22px;text-transform: uppercase;}
+.tblChk.head .chk{width: 29px;}
+.tblChk.body{height: 100px;overflow: auto;margin-top:-5px;border-bottom: 1px solid #dddddd;}
+.tblChk.body .chk{width: 30px;}
+.tblChk .chk div{width: 20px;display: inline-block;vertical-align: middle;}
+.tblChk .desc{width: 300px;}
+/* OSINE791 RSIS9 - Fin */
+/* OSINE791 RSIS5 - Inicio */
+.btnNavSupervisionDsr{
+    bottom: -43px;
+    left: 0;
+    position: absolute;
+}
+/* OSINE791 RSIS5 - Fin */
+
+/* OSINE791 RSIS4 - Inicio */
+.btnGuardarSupervisionDsrPorVerificar{
+    top: 190px;
+    right: 362px;
+    position: absolute;
+}
+/* OSINE791 RSIS4 - Fin */
+
+.contextMenu{box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8)}
+/*temporal*/
+.btnBuscarExpe{
+    position: absolute;
+    right: 0;
+    top: -32px;
+}
+
+.btnRefrescarExpe{
+    position: absolute;
+    right: 40px;
+    top: -32px;
+}
+
+/*cursor*/
+.cp{cursor: pointer;}
+/* text transform*/
+.ttuc{text-transform: uppercase;}
+.ttn{text-transform: none;}
+/* alineaciones */
+.tar{text-align: right !important;}
+.tac{text-align: center;}
+.vat{vertical-align: top;}
+.vam{vertical-align: middle;}
+.tal{text-align: left !important;}
+/* estilo letras */
+.fwb{font-weight: bold;}
+/* letras */
+.txt-title, .txt-title span{font-weight: bold;font-size: 14px;margin: 5px 0px;}
+.txt-subtitle, .txt-subtitle span{font-weight: bold;font-size: 12px;margin: 5px 0px;color: #002c53}
+.txt-obligatorio{color: #409fff;font-size: 0.9em !important;font-weight: bold;margin: 5px;}
+/* formularios */
+.form{display: inline-block;text-align: left;}
+.form-large{width:1170px;}
+.form-small{width:580px;}
+.filaForm{margin: 5px 0px;}
+.filaForm div{display: inline-block;}
+.filaForm .fila,.fila div{display: block;}
+/*filaForm flotante*/
+.filaForm.noMargin{margin: 0px;}
+.filaForm.noMargin div{margin: 0px 0px 5px;}
+/* labels */
+.lbl-small,.lbl-medium,.lbl-large{padding: 0px 0px 0px 5px;}
+.lbl-tiny{padding: 0px 0px 0px 2px;}
+.lbl-tiny{width: 65px;}
+.lbl-small{width: 95px;}
+.lbl-medium{width: 159px;}
+.lbl-large{width: 300px;}
+/* inputs */
+.ipt-small{width: 75px;}
+.ipt-medium{width: 141px;}
+.ipt-large{width: 300px;}
+/* inputs combinados */
+.ipt-medium-small-medium{width: 412px;}
+.ipt-medium-small {width: 244px;}
+.ipt-medium-small-medium-small-small{width: 600px;}
+.ipt-medium-small-medium-small-small-small{width: 497px;}
+.ipt-medium-small-medium-small-medium{width: 681px;}
+.ipt-medium-small-medium-small-large{width: 951px;}
+/* selects */
+.slct-tiny{width: 85px;}
+/* OSINE_SFS-1063 - RSIS 04 - Inicio */
+.slct-small{width: 125px;}
+.lbl-small-small{width: 85px;}
+.lbl-espacio{margin-right: 25px;}
+/* OSINE_SFS-1063 - RSIS 04 - Fin */     
+.slct-medium{width: 165px;}
+.slct-large{width: 300px;}
+/* selects combinados */
+.slct-medium-small-medium{width: 436px;}
+.slct-medium-small-medium-small{width: 706px;}
+.slct-medium-small {width: 269px;}
+/* botones */
+.btnCloseDialog{}
+.botones{display: block;margin: 2px 0;text-align: center;}
+.btn-azul {
+    background-color: #002c53;border: 1px solid #002c53;border-radius: 4px;box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.98);
+    color: #ffffff;cursor: pointer;display: inline-block;font-size: 12px;font-weight: bold;padding: 5px;
+}
+/* OSINE_MAN-001 - Fin */
+.btn-opaco {
+    background-color: #A4A8B0;border: 1px solid #A4A8B0;border-radius: 4px;box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.98);
+    color: #ffffff;cursor: pointer;display: inline-block;font-size: 12px;font-weight: bold;padding: 5px;
+}
+/* OSINE_MAN-001 - Fin */
+button {
+    background-color: #002c53;border: 1px solid #002c53;border-radius: 4px;box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.98);
+    color: #ffffff;cursor: pointer;display: inline-block;font-size: 12px;font-weight: bold;padding: 5px 30px;margin: 0px 3px;
+}
+/* OSINE_SFS-480 - RSIS 03 - Inicio */
+.btn-min-small{width: 50px;}
+/* OSINE_SFS-480 - RSIS 03 - Fin */
+.btn-small{width: 100px;}
+.btn-medium{width: 150px;}
+.btn-large{width: 200px;}
+/* inlines */
+.ilb{display: inline-block;}
+
+/*******************************************************************************************/
+/*mayusculas*/
+.ui-jqgrid{text-transform: uppercase;}
+select, input[type="text"], textarea{text-transform: uppercase;}
+/* modificacion css plantilla */
+.ui-tabs .ui-tabs-panel{padding: 1em 0.4em}
+.pui-panel .pui-panel-content{padding: 0.5em 0.5em}
+th.ui-th-column div{white-space:normal !important;height:auto !important;}
+.pui-fieldset-legend {background: #016aa3 !important;border: 1px solid #0073ea !important;color: #ffffff !important;font-weight: bold;width: 40%;}
+.ui-jqgrid .ui-jqgrid-htable th div,.ui-jqgrid tr.ui-row-ltr td,.ui-jqgrid .ui-pg-table td,.ui-jqgrid .ui-paging-info{font-size: 11px;}
+/*.ui-state-default .ui-icon {background-image: url("jqueryui/images/ui-icons_ffffff_256x240.png") !important;}*/
+
+/* tags */
+fieldset{padding: 5px;}
+legend{padding: 0px 5px;}
+/* container file */
+.container-file {position: relative;overflow: hidden;}
+.container-file input[type="file"] {cursor: pointer;height: 100%;left: 0;opacity: 0;position: absolute;top: 0;width: 330px;z-index: 5;}
+.container-file input[type="text"] {background-color: #FFFFFF;float: left;margin-right: 10px;position: relative;width: 160px;}
+.container-file .search_file, .add_file {color: #333333;display: block;float: left;padding: 3px 0;text-align: center;width: 138px;}
+.container-file .button {background-color: #eeeeee;border: 1px solid #999999;color: #666666;cursor: pointer;}
+/* link */
+.link {cursor: pointer;font-weight:bold;text-decoration: underline;}
+.link:hover{text-decoration: underline !important;}
+/* contenedor - grilla */
+.content-grilla{display:inline-block;}
+/*dialog comun para confirmacion de: nuevo, editar, eliminar*/
+.dialogComunConf .cuerpo{min-height: 35px;margin-top:5px;}
+.dialogComunConf .icon{width: 25px; vertical-align: top;}
+.dialogComunConf .text{width: 330px; vertical-align: top;}
+/* overlay */
+#overlay_loading{position: fixed;height: 100%;width: 100%;z-index: 999;opacity: 0.5;background: #FFFFFF;}
+#overlay_loading div{height: 16px; width: 16px; left: 50%; top: 48%; position: fixed;}
+/* container */
+.container {margin: 3px auto;width: 1200px;}
+/* body */
+body {background-color: #f0f8ff;}
+/* style grid flagOrigen Inps(1) */
+.tr-inps{
+    background: #D5E6F7;
+}
+
+.cortar{
+    width:200px;
+    height:20px;
+    padding:20px;
+    border:1px solid;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    overflow:hidden;
+}
+.cortar:hover {
+    width: auto;
+    white-space: initial;
+    overflow:visible;
+    cursor: pointer;
+}
+/*radio-css*/
+.radio-div{
+    display: inline-block;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height:130px;
+    width:99%;
+    border: 2px solid #ddd;
+}
+/*generacion de combos*/
+.contChkA{display: inline-block;padding: 2px 0px 2px 5px;overflow: hidden;margin: 0px 5px;}
+.txtFilaUnic{height: 18px;overflow: hidden;white-space:pre;}
+.lblh{width: 620px;}
+.bgA{background: #E5E5E7;}
+.ilb{display: inline-block;}
+.vam{vertical-align: middle;}
+.fr{float:right;}
+
+div.errorMensaje{
+    border: 1px solid;
+    margin: 10px 60px;
+    padding: 10px 10px 10px 50px;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    color: #D8000C;
+    background-color: #FFBABA;
+    background-image: url('../images/list-remove.png');
+}
+
+/* OSINE_SFS-480 - RSIS 03 - Inicio */
+
+.listMultipleMensajeria { 
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px #ccc solid;
+    padding: 7px 7px 7px 7px;
+    overflow-x: hidden;
+    background: #fff;
+    overflow-y: auto;
+}
+
+.rowDataSelected {
+    font-family: Trebuchet MS;
+    text-transform: uppercase;
+    font-size:12px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    border: 1px #ccc solid;
+    padding: 3px 3px 8px 3px;
+    cursor: pointer;
+    margin-bottom: 7px;
+    background-image: -ms-linear-gradient(bottom, #F5F5F5 0%, #FFFFFF 100%);
+    /* Mozilla Firefox */
+    background-image: -moz-linear-gradient(bottom, #F5F5F5 0%, #FFFFFF 100%);
+    /* Opera */
+    background-image: -o-linear-gradient(bottom, #F5F5F5 0%, #FFFFFF 100%);
+    /* Webkit (Safari/Chrome 10) */
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #F5F5F5),
+        color-stop(1, #FFFFFF) );
+    /* Webkit (Chrome 11+) */
+    background-image: -webkit-linear-gradient(bottom, #F5F5F5 0%, #FFFFFF 100%);
+    /* W3C Markup, IE10 Release Preview */
+    background-image: linear-gradient(to top, #F5F5F5 0%, #FFFFFF 100%);
+    background-image: linear-gradient(top, #F5F5F5, #FFFFFF);
+}
+
+.rowDataSelected:hover {
+    background-image: -ms-linear-gradient(bottom, #016AA3 0%, #016AA3 100%);
+    /* Mozilla Firefox */
+    background-image: -moz-linear-gradient(bottom, #016AA3 0%, #016AA3 100%);
+    /* Opera */
+    background-image: -o-linear-gradient(bottom, #016AA3 0%, #016AA3 100%);
+    /* Webkit (Safari/Chrome 10) */
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #016AA3),
+        color-stop(1, #016AA3) );
+    /* Webkit (Chrome 11+) */
+    background-image: -webkit-linear-gradient(bottom, #016AA3 0%, #016AA3 100%);
+    /* W3C Markup, IE10 Release Preview */
+    background-image: linear-gradient(to top, #016AA3 0%, #016AA3 100%);
+    background-image: linear-gradient(top, #016AA3, #016AA3);
+    color:#FFFFFF;
+}
+
+.rowSelectedSendData {
+    font-family: Trebuchet MS;
+    text-transform: uppercase;
+    font-size:12px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    border: 1px #B8D6FB solid;
+    padding: 3px 3px 8px 3px;
+    cursor: pointer;
+    margin-bottom: 7px;
+    background-image: -ms-linear-gradient(bottom, #D5E6F7 0%, #D5E6F7 100%);
+    /* Mozilla Firefox */
+    background-image: -moz-linear-gradient(bottom, #D5E6F7 0%, #D5E6F7 100%);
+    /* Opera */
+    background-image: -o-linear-gradient(bottom, #D5E6F7 0%, #D5E6F7 100%);
+    /* Webkit (Safari/Chrome 10) */
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #D5E6F7),
+        color-stop(1, #D5E6F7) );
+    /* Webkit (Chrome 11+) */
+    background-image: -webkit-linear-gradient(bottom, #D5E6F7 0%, #D5E6F7 100%);
+    /* W3C Markup, IE10 Release Preview */
+    background-image: linear-gradient(to top, #D5E6F7 0%, #D5E6F7 100%);
+    background-image: linear-gradient(top, #D5E6F7, #D5E6F7);
+}
+
+.rowSelected {
+    font-family: Trebuchet MS;
+    text-transform: uppercase;
+    font-size:12px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    border: 1px #B8D6FB solid;
+    padding: 3px 3px 8px 3px;
+    cursor: pointer;
+    margin-bottom: 7px;
+    background-image: -ms-linear-gradient(bottom, #B0CEF7 0%, #FFFFFF 100%);
+    /* Mozilla Firefox */
+    background-image: -moz-linear-gradient(bottom, #B0CEF7 0%, #FFFFFF 100%);
+    /* Opera */
+    background-image: -o-linear-gradient(bottom, #B0CEF7 0%, #FFFFFF 100%);
+    /* Webkit (Safari/Chrome 10) */
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #B0CEF7),
+        color-stop(1, #FFFFFF) );
+    /* Webkit (Chrome 11+) */
+    background-image: -webkit-linear-gradient(bottom, #B0CEF7 0%, #FFFFFF 100%);
+    /* W3C Markup, IE10 Release Preview */
+    background-image: linear-gradient(to top, #B0CEF7 0%, #FFFFFF 100%);
+    background-image: linear-gradient(top, #B0CEF7, #FFFFFF);
+}
+
+.rowContent {
+    font-family: Trebuchet MS;
+    text-transform: uppercase;
+    font-size:12px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    border: 1px #ccc solid;
+    padding: 3px 3px 8px 3px;
+    cursor: pointer;
+    margin-bottom: 7px;
+    background-image: -ms-linear-gradient(bottom, #F5F5F5 0%, #FFFFFF 100%);
+    /* Mozilla Firefox */
+    background-image: -moz-linear-gradient(bottom, #F5F5F5 0%, #FFFFFF 100%);
+    /* Opera */
+    background-image: -o-linear-gradient(bottom, #F5F5F5 0%, #FFFFFF 100%);
+    /* Webkit (Safari/Chrome 10) */
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #F5F5F5),
+        color-stop(1, #FFFFFF) );
+    /* Webkit (Chrome 11+) */
+    background-image: -webkit-linear-gradient(bottom, #F5F5F5 0%, #FFFFFF 100%);
+    /* W3C Markup, IE10 Release Preview */
+    background-image: linear-gradient(to top, #F5F5F5 0%, #FFFFFF 100%);
+    background-image: linear-gradient(top, #F5F5F5, #FFFFFF);
+}
+
+.rowContent:hover {
+    background-image: -ms-linear-gradient(bottom, #016AA3 0%, #016AA3 100%);
+    /* Mozilla Firefox */
+    background-image: -moz-linear-gradient(bottom, #016AA3 0%, #016AA3 100%);
+    /* Opera */
+    background-image: -o-linear-gradient(bottom, #016AA3 0%, #016AA3 100%);
+    /* Webkit (Safari/Chrome 10) */
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #016AA3),
+        color-stop(1, #016AA3) );
+    /* Webkit (Chrome 11+) */
+    background-image: -webkit-linear-gradient(bottom, #016AA3 0%, #016AA3 100%);
+    /* W3C Markup, IE10 Release Preview */
+    background-image: linear-gradient(to top, #016AA3 0%, #016AA3 100%);
+    background-image: linear-gradient(top, #016AA3, #016AA3);
+    color:#FFFFFF;
+}
+
+ul.documento {
+    font-weight: bold;
+    padding: 4px 0px 4px 3px;
+    margin: 0px;
+    text-align: left;
+}
+
+li.archivo {
+    font-weight: normal;
+    margin: 8px 0px 2px 15px;
+    text-align: left;
+    list-style-type: none;
+}
+
+
+input[type=checkbox].css-checkbox {
+    display:none;
+}
+
+input[type=checkbox].css-checkbox + label.css-label {
+    padding-left:20px;
+    height:15px; 
+    display:inline-block;
+    line-height:15px;
+    background-repeat:no-repeat;
+    background-position: 0 0;
+    text-transform: uppercase;
+    font-size:12px;
+    cursor:pointer;
+}
+
+input[type=checkbox].css-checkbox:checked + label.css-label {
+    background-position: 0 -15px;
+}
+
+.css-label{
+    background-image:url(../images/dark-check-green.png);
+    text-transform: uppercase;
+    font-size:10px;
+}
+
+.lite-blue-check{background-image:url(../images/lite-blue-check.png);}
+.lite-gray-check{background-image:url(../images/lite-gray-check.png);}
+
+
+
+.custom-radio, .custom-checkbox {
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute;
+}
+
+/*
+ * Dejar espacio a la 'label' para posicionar el checkbox hecho con pseudoelementos
+ */
+.custom-radio + label, .custom-checkbox + label {
+    position: relative;
+    padding-left: 16px;
+}
+
+/*
+ * El pseudoelemento que emulará el input
+ */
+.custom-radio + label:before, .custom-checkbox + label:before {
+    content: "";
+    display: inline-block;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-size:12px;
+    width: 13px;
+    height: 13px;
+    line-height: 11px;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -6.5px;
+    background: white;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #dddddd));
+    background-image: -webkit-linear-gradient(#ffffff, #dddddd);
+    background-image: -moz-linear-gradient(#ffffff, #dddddd);
+    background-image: -o-linear-gradient(#ffffff, #dddddd);
+    background-image: linear-gradient(#ffffff, #dddddd);
+    zoom: 1;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffff, endColorstr=#dddddd);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#dddddd')";
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid #aaa;
+}
+
+/*
+ * Fondo para cuando se pasa el raton por encima
+ */
+.custom-radio + label:hover:before, .custom-checkbox + label:hover:before {
+    background: #fafafa;
+}
+
+/*
+ * Fondo para cuando se esta haciendo click
+ * Con filtros para ie9
+ */
+.custom-radio + label:active:before, .custom-checkbox + label:active:before {
+    background: #f2f2f2;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #dddddd), color-stop(100%, #ffffff));
+    background-image: -webkit-linear-gradient(#dddddd, #ffffff);
+    background-image: -moz-linear-gradient(#dddddd, #ffffff);
+    background-image: -o-linear-gradient(#dddddd, #ffffff);
+    background-image: linear-gradient(#dddddd, #ffffff);
+    zoom: 1;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#dddddd, endColorstr=#ffffff);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#dddddd', endColorstr='#ffffff')";
+}
+
+/*
+ * Redondear el botón "radio"
+ * Sobreescribimos el border-radius: 3px general
+ */
+.custom-radio + label:before {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+/*
+ * Mostrar un punto cuando está seleccionado el "radio"
+ * Usamos box-shadow para simular un fondo gris, mientras que dejamos un pequeño 
+ * espacio para el punto negro (#444), que es el fondo
+ */
+.custom-radio:checked + label:before {
+    background: #444;
+    -webkit-box-shadow: 0 0 0 3px #eeeeee inset;
+    -moz-box-shadow: 0 0 0 3px #eeeeee inset;
+    box-shadow: 0 0 0 3px #eeeeee inset;
+}
+
+/*
+ * Estilos focus para la gente que navega con el teclado, etc
+ */
+.custom-radio:focus + label:before,
+.custom-checkbox:focus + label:before {
+    outline: 1px dotted;
+}
+
+/* Mostrar la "X" cuando está chequeada (sólo el checkbox).
+ * Podríamos usar una fuente de iconos para mostrar un tic
+ */
+.custom-checkbox:checked + label:before {
+    content: "X";
+}
+/* OSINE_SFS-480 - RSIS 03 - Fin */
+
+/* OSINE_MAN_DSR_0034 - Inicio */
+.ui-jqgrid tr.jqgrow td {
+        word-wrap: break-word; /* IE 5.5+ and CSS3 */
+        white-space: pre-wrap; /* CSS3 */
+        white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+        white-space: -pre-wrap; /* Opera 4-6 */
+        white-space: -o-pre-wrap; /* Opera 7 */
+        overflow: hidden;
+        height: auto;
+        vertical-align: middle;
+        padding-top: 3px;
+        padding-bottom: 3px
+}
+/* OSINE_MAN_DSR_0034 - Fin */

@@ -1,0 +1,39 @@
+/*resolver conflicto con dialog.css*/
+.ui-spinner .ui-spinner-up .ui-button-text,
+.ui-spinner .ui-spinner-down .ui-button-text{
+    display: block;
+}
+
+.ui-spinner
+{
+	border: 2px solid #3B4959;
+	border-radius: 4px;
+}
+
+.ui-spinner input
+{
+	outline: none;
+}
+
+.ui-spinner .ui-spinner-up,
+.ui-spinner .ui-spinner-down
+{
+	background: #016AA3;
+	border-radius: 0;
+	outline: none;
+	border: none !important;
+	cursor: pointer;
+}
+
+.ui-spinner .ui-spinner-up:hover,
+.ui-spinner .ui-spinner-down:hover
+{
+	background: #002C53;
+}
+
+.ui-spinner .ui-spinner-up .ui-icon,
+.ui-spinner .ui-spinner-down .ui-icon
+{
+	background-image: url(images/ui-icons_ffffff_256x240.png);
+	margin-left: 1px;
+}

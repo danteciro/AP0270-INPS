@@ -1,0 +1,631 @@
+/* RESET */
+* {
+	margin: 0;
+	padding: 0;
+	font: normal 12px 'Calibri';
+	outline: none;
+}
+
+b,
+strong
+{
+	font-weight: bold;
+}
+
+/* FIELDSET */
+
+fieldset
+{
+	border: 2px solid #002C53;
+	color: #002C53;
+	border-radius: 3px;
+}
+
+legend
+{
+	font-weight: bold;
+	margin: 0 10px;
+}
+
+/* CHECKBOX, RADIO BUTTON  TODO a corregir */
+
+input[type="checkbox"], input[type="radio"]
+{
+	display: none;
+}
+
+.checkbox,
+.radio
+{
+	cursor: pointer;
+	line-height: 20px !important;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-ms-user-select: none;
+}
+
+.checkbox:before,
+.radio:before
+{
+	content: '';
+	display: block;
+	width: 20px;
+	height: 20px;
+	float: left;
+	margin-right: 5px;
+	border-radius: 3px;
+}
+
+.checkbox:before
+{
+	background: url('../img/checks.png') 0 0;
+}
+
+.radio:before
+{
+	background: url('../img/radios.png') 0 0;
+}
+
+input[type="checkbox"]:checked + .checkbox:before
+{
+	background: url('../img/checks.png') 0 -20px;
+}
+
+input[type="radio"]:checked + .radio:before {
+	background: url('../img/radios.png') 0 -20px;
+}
+
+input[type="checkbox"][disabled] + .checkbox:before
+{
+	background: url('../img/checks.png') 0 -40px;
+}
+
+input[type="checkbox"][disabled][checked] + .checkbox:before
+{
+	background: url('../img/checks.png') 0 -60px;
+}
+
+input[type="radio"][disabled]+ .radio:before {
+	background: url('../img/radios.png') 0 -40px;
+}
+
+input[type="radio"][disabled][checked] + .radio:before {
+	background: url('../img/radios.png') 0 -60px;
+}
+
+/* INPUTS  */
+
+.input
+{
+	position: relative;
+	width: 250px;
+}
+
+.input label
+{
+	color: #3B4959;
+}
+
+/*input[type="text"],
+input[type="password"],*/
+input,
+textarea,
+select
+{
+	width: 226px;
+	padding: 4px 10px;
+	border: 2px solid #3B4959;
+	border-radius: 4px;
+	position: relative;
+	color: #666;
+}
+
+textarea
+{
+	resize: none;
+	overflow: auto;
+}
+
+input[type="text"]:focus:not([disabled]),
+input[type="text"]:active:not([disabled]),
+input[type="text"].error:focus,
+input[type="text"].error:active,
+input[type="password"]:focus:not([disabled]),
+input[type="password"]:active:not([disabled]),
+input[type="password"].error:focus,
+input[type="password"].error:active,
+textarea:focus:not([disabled]),
+textarea:active:not([disabled]),
+textarea.error:focus,
+textarea.error:active,
+select:focus:not([disabled]),
+select:active:not([disabled])
+select.error:focus,
+select.error:active
+{
+	border-color: #016AA3;
+}
+
+input[type="text"]:focus:not([disabled]) ~ label,
+input[type="text"]:active:not([disabled]) ~ label,
+input[type="text"].error:focus ~ label,
+input[type="text"].error:active ~ label,
+input[type="password"]:focus:not([disabled]) ~ label,
+input[type="password"]:active:not([disabled]) ~ label,
+input[type="password"].error:focus ~ label,
+input[type="password"].error:active ~ label,
+textarea:focus:not([disabled]) ~ label,
+textarea:active:not([disabled]) ~ label,
+textarea.error:focus ~ label,
+textarea.error:active ~ label,
+select:focus:not([disabled]) ~ label,
+select:active:not([disabled]) ~ label,
+select.error:focus ~ label,
+select.error:active ~ label
+{
+	color: #016AA3;
+}
+
+input[type="text"]:focus + .error_input,
+input[type="text"]:active + .error_input,
+textarea:focus + .error_input,
+textarea:active + .error_input,
+input[type="text"].error:focus + .error_input,
+input[type="text"].error:active + .error_input,
+textarea.error:focus + .error_input,
+textarea.error:active + .error_input
+{
+	display: none;
+}
+
+input[type="text"].error ~ label,
+input[type="password"].error ~ label,
+textarea.error ~ label,
+select.error ~ label
+{
+	color: #E74C3C;
+}
+
+input[type="text"].error,
+input[type="password"].error,
+textarea.error,
+select.error,
+label.error
+{
+	color: #E74C3C;
+	border-color: #E74C3C;
+}
+
+div.error
+{
+/* 	background-color:#E74C3C; */
+	border-color: #E74C3C;
+   	border-width: -1px;
+   	border-style: solid;
+}
+
+
+input[type="text"].error + label, 
+textarea.error + label,
+select.error + label
+{
+	color: #E74C3C;
+}
+
+.error_input
+{
+	display: none;
+	position: absolute;
+	top: 2px;
+	right: 0;
+	z-index: 5;
+	width: 27px;
+	height: 27px;
+	border-radius: 4px;
+	background-color: #E74C3C;
+	color: #FFF;
+	font-weight: bold;
+	font-size: 19px;
+	line-height: 27px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.error + .error_input
+{
+	background: #E74C3C;
+	display: block;
+}
+
+input[type="text"][disabled],
+input[type="password"][disabled],
+textarea[disabled],
+select[disabled]
+{
+	cursor: not-allowed;
+	background-color: #EBEBE4;
+}
+
+/* BOTONES */
+.button_1
+{
+	display: inline-block;
+	-webkit-box-shadow: rgba(0,0,0,0.98) 0 1px 0 0;
+	-moz-box-shadow: rgba(0,0,0,0.98) 0 1px 0 0;
+	box-shadow: rgba(0,0,0,0.98) 0 1px 0 0;
+	border: 1px solid #002C53;
+	color: #FFF;
+	padding: 10px 30px;
+	border-radius: 4px;
+	cursor: pointer;
+	background-color: #002C53;
+	font-weight: bold;
+}
+
+.button_1:hover
+{
+	background-color: #016AA3;
+	color: #FFF;
+}
+
+.button_1.detail,
+.button_1.notification,
+.button_1.sign,
+.button_1.return,
+.button_1.export,
+.button_1.exit,
+.button_1.help,
+.button_1.search,
+.button_1.save,
+.button_1.cancel,
+.button_1.new,
+.button_1.edit,
+.button_1.update,
+.button_1.delete,
+.button_1.print,
+.button_1.expand,
+.button_1.collapse,
+.button_1.pager,
+.button_1.add,
+.button_1.remove,
+.button_1.detail,
+.button_1.notification,
+.button_1.sign,
+.button_1.return,
+.button_1.expore
+.button_2.detail,
+.button_2.notification,
+.button_2.sign,
+.button_2.return,
+.button_2.export,
+.button_2.exit,
+.button_2.help,
+.button_2.search,
+.button_2.save,
+.button_2.cancel,
+.button_2.new,
+.button_2.edit,
+.button_2.update,
+.button_2.delete,
+.button_2.print,
+.button_2.expand,
+.button_2.collapse,
+.button_2.pager,
+.button_2.add,
+.button_2.remove,
+.button_2.detail,
+.button_2.notification,
+.button_2.sign,
+.button_2.return,
+.button_2.export
+{
+	line-height: 25px;
+}
+
+.button_1.detail:before,
+.button_1.notification:before,
+.button_1.sign:before,
+.button_1.return:before,
+.button_1.export:before,
+.button_1.exit:before,
+.button_1.help:before,
+.button_1.search:before,
+.button_1.save:before,
+.button_1.cancel:before,
+.button_1.new:before,
+.button_1.edit:before,
+.button_1.update:before,
+.button_1.delete:before,
+.button_1.print:before,
+.button_1.expand:before,
+.button_1.collapse:before,
+.button_1.pager:before,
+.button_1.add:before,
+.button_1.remove:before,
+.button_1.detail:before,
+.button_1.notification:before,
+.button_1.sign:before,
+.button_1.return:before,
+.button_1.export:before
+.button_2.detail:before,
+.button_2.notification:before,
+.button_2.sign:before,
+.button_2.return:before,
+.button_2.export:before,
+.button_2.exit:before,
+.button_2.help:before,
+.button_2.search:before,
+.button_2.save:before,
+.button_2.cancel:before,
+.button_2.new:before,
+.button_2.edit:before,
+.button_2.update:before,
+.button_2.delete:before,
+.button_2.print:before,
+.button_2.expand:before,
+.button_2.collapse:before,
+.button_2.pager:before,
+.button_2.add:before,
+.button_2.remove:before,
+.button_2.detail:before,
+.button_2.notification:before,
+.button_2.sign:before,
+.button_2.return:before,
+.button_2.export:before
+{
+	background-image: url('../img/sprites.png');
+	content: '';
+	display: block;
+	width: 25px;
+	height: 25px;
+	float: left;
+	margin-right: 5px;
+}
+
+.button_1.exit:before
+{
+	/*background: ;*/
+}
+
+.button_1.help:before
+{
+	/*background: ;*/
+}
+
+.button_1.search:before
+{
+	/*background-position: -50px 0;*/
+}
+
+.button_1.save:before
+{
+	background-position: 0 0;
+}
+
+.button_1.cancel:before
+{
+	/*background: ;*/
+}
+
+.button_1.new:before
+{
+	/*background: ;*/
+}
+
+.button_1.edit:before
+{
+	background-position: -75px 0;
+}
+
+.button_1.update:before
+{
+	/*background: ;*/
+}
+
+.button_1.delete:before
+{
+	background-position: -25px 0;
+}
+
+.button_1.print:before
+{
+	/*background: ;*/
+}
+.button_1.expand:before
+{
+	/*background: ;*/
+}
+
+.button_1.collapse:before
+{
+	/*background: ;*/
+}
+
+.button_1.pager:before
+{
+	/*background: ;*/
+}
+
+.button_1.add:before
+{
+	/*background: ;*/
+}
+
+.button_1.remove:before
+{
+	/*background: ;*/
+}
+
+.button_1.detail:before
+{
+	/*background: ;*/
+}
+
+.button_1.notification:before
+{
+	/*background: ;*/
+}
+
+.button_1.sign:before
+{
+	/*background: ;*/
+}
+
+.button_1.return:before
+{
+	/*background: ;*/
+}
+
+.button_1.export:before
+{
+	/*background: ;*/
+}
+
+.button_2.exit:before
+{
+	/*background: ;*/
+}
+
+.button_2.help:before
+{
+	/*background: ;*/
+}
+
+.button_2.search:before
+{
+	/*background: ;*/
+}
+
+.button_2.save:before
+{
+	/*background: ;*/
+}
+
+.button_2.cancel:before
+{
+	/*background: ;*/
+}
+
+.button_2.new:before
+{
+	/*background: ;*/
+}
+
+.button_2.edit:before
+{
+	/*background: ;*/
+}
+
+.button_2.update:before
+{
+	/*background: ;*/
+}
+
+.button_2.delete:before
+{
+	/*background: ;*/
+}
+
+.button_2.print:before
+{
+	/*background: ;*/
+}
+.button_2.expand:before
+{
+	/*background: ;*/
+}
+
+.button_2.collapse:before
+{
+	/*background: ;*/
+}
+
+.button_2.pager:before
+{
+	/*background: ;*/
+}
+
+.button_2.add:before
+{
+	/*background: ;*/
+}
+
+.button_2.remove:before
+{
+	/*background: ;*/
+}
+
+.button_2.detail:before
+{
+	/*background: ;*/
+}
+
+.button_2.notification:before
+{
+	/*background: ;*/
+}
+
+.button_2.sign:before
+{
+	/*background: ;*/
+}
+
+.button_2.return:before
+{
+	/*background: ;*/
+}
+
+.button_2.export:before
+{
+	/*background: ;*/
+}
+
+.button_2
+{
+	-webkit-box-shadow:rgba(0,0,0,0.98) 0 1px 0 0;
+	-moz-box-shadow:rgba(0,0,0,0.98) 0 1px 0 0;
+	box-shadow:rgba(0,0,0,0.98) 0 1px 0 0;
+	background-color:#EEE;
+	border:1px solid #999;
+	color:#666;
+	display: inline-block;
+	padding: 5px 10px;
+	cursor: pointer;
+}
+
+.button_2:hover
+{
+	border: 1px solid #002C53;
+}
+
+.button_1.disabled,
+.button_2.disabled
+{
+	background-color: #EEE;
+	border: 1px solid #333;
+	cursor: not-allowed;
+	color: #666;
+}
+
+/* HEADER */
+.header
+{
+	background-color: #002C53;
+	border: 2px solid #016AA3;
+	color: #FFF;
+	border-radius: 5px;
+	padding: 0 5px 3px;
+	font-weight: bold;
+}
+
+.header:hover,
+.header.active
+{
+	background-color: #016AA3;
+	border: 2px solid #002C53;
+}
+
+.button_2.btn_small{
+    padding:3px 5px;
+}

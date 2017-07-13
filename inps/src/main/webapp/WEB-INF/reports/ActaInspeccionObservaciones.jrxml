@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ActaInspeccionObservaciones" language="groovy" pageWidth="595" pageHeight="890" whenNoDataType="AllSectionsNoDetail" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
+	<property name="ireport.zoom" value="1.1"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="480"/>
+	<parameter name="obsAjustesRele" class="java.lang.String"/>
+	<parameter name="obsHabilitacionRele" class="java.lang.String"/>
+	<parameter name="obsProtocoloRele" class="java.lang.String"/>
+	<parameter name="obsReporteRele" class="java.lang.String"/>
+	<parameter name="obsOtrasObs" class="java.lang.String"/>
+	<parameter name="FechaHoraFirma" class="java.lang.String"/>
+	<parameter name="rutaImagen" class="java.io.InputStream">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="rutaImagenUkas" class="java.io.InputStream">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="rutaImagenSGS" class="java.io.InputStream">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="obsNotaEmpresa" class="java.lang.String"/>
+	<parameter name="cargoTrabajador" class="java.lang.String"/>
+	<parameter name="nombreTrabajador" class="java.lang.String"/>
+	<parameter name="cargoOsi" class="java.lang.String"/>
+	<parameter name="nombreTrabajadorOsi" class="java.lang.String"/>
+	<parameter name="obsNotasEmpresa" class="java.lang.String"/>
+	<parameter name="fechaHoraFirma" class="java.lang.String"/>
+	<pageHeader>
+		<band height="65" splitType="Stretch">
+			<rectangle>
+				<reportElement x="24" y="12" width="158" height="45"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="343" y="12" width="180" height="45"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="182" y="12" width="161" height="45"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="202" y="26" width="119" height="20"/>
+				<textElement>
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Acta de Inspección]]></text>
+			</staticText>
+			<image isUsingCache="true">
+				<reportElement x="31" y="23" width="135" height="23"/>
+				<imageExpression class="java.io.InputStream"><![CDATA[$P{rutaImagen}]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="352" y="43" width="50" height="15"/>
+				<textElement>
+					<font fontName="Arial"/>
+				</textElement>
+				<text><![CDATA[Fecha     :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="351" y="14" width="50" height="15"/>
+				<textElement>
+					<font fontName="Arial"/>
+				</textElement>
+				<text><![CDATA[Código    :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="351" y="28" width="50" height="15"/>
+				<textElement>
+					<font fontName="Arial"/>
+				</textElement>
+				<text><![CDATA[Revisión  :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="404" y="43" width="100" height="15"/>
+				<textElement>
+					<font fontName="Arial"/>
+				</textElement>
+				<text><![CDATA[20 mayo 2010]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="404" y="13" width="100" height="15"/>
+				<textElement>
+					<font fontName="Arial"/>
+				</textElement>
+				<text><![CDATA[F3-GFE-UGSE-PE-03]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="404" y="27" width="100" height="15"/>
+				<textElement>
+					<font fontName="Arial"/>
+				</textElement>
+				<text><![CDATA[01]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<detail>
+		<band height="53">
+			<staticText>
+				<reportElement positionType="Float" isPrintRepeatedValues="false" x="22" y="17" width="180" height="15" isPrintInFirstWholeBand="true"/>
+				<textElement>
+					<font fontName="Arial" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Observaciones del supervisor:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement isPrintRepeatedValues="false" x="25" y="38" width="215" height="15" isPrintInFirstWholeBand="true"/>
+				<textElement>
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[a. Ajustes de los relés:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement isPrintRepeatedValues="false" x="11" y="0" width="226" height="15" isPrintInFirstWholeBand="true"/>
+				<textElement>
+					<font fontName="Arial" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[3. Observaciones de la inspección]]></text>
+			</staticText>
+		</band>
+		<band height="67">
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement stretchType="RelativeToTallestObject" x="32" y="4" width="492" height="56" isPrintWhenDetailOverflows="true"/>
+				<textElement>
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{obsAjustesRele}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="18">
+			<staticText>
+				<reportElement positionType="Float" x="25" y="0" width="215" height="15" isPrintInFirstWholeBand="true" isPrintWhenDetailOverflows="true"/>
+				<textElement>
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[b. Habilitación de los disparos de los relés:]]></text>
+			</staticText>
+		</band>
+		<band height="64">
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="32" y="4" width="492" height="56" isPrintWhenDetailOverflows="true"/>
+				<textElement>
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{obsHabilitacionRele}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="20">
+			<staticText>
+				<reportElement positionType="Float" x="25" y="3" width="254" height="15" isPrintInFirstWholeBand="true" isPrintWhenDetailOverflows="true"/>
+				<textElement>
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[c. Protocolo de pruebas de los ajustes de los relés:]]></text>
+			</staticText>
+		</band>
+		<band height="61">
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" x="31" y="2" width="492" height="56" isPrintWhenDetailOverflows="true"/>
+				<textElement>
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{obsProtocoloRele}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="22">
+			<staticText>
+				<reportElement positionType="Float" x="24" y="0" width="177" height="20" isPrintInFirstWholeBand="true" isPrintWhenDetailOverflows="true"/>
+				<textElement>
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[d. Reporte de eventos de los relés:]]></text>
+			</staticText>
+		</band>
+		<band height="64">
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="32" y="5" width="492" height="56" isPrintWhenDetailOverflows="true"/>
+				<textElement>
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{obsReporteRele}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="24">
+			<staticText>
+				<reportElement positionType="Float" x="24" y="0" width="120" height="20" isPrintInFirstWholeBand="true" isPrintWhenDetailOverflows="true"/>
+				<textElement>
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[e. Otras observaciones:]]></text>
+			</staticText>
+		</band>
+		<band height="64">
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="32" y="4" width="492" height="56" isPrintWhenDetailOverflows="true"/>
+				<textElement>
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{obsOtrasObs}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="24">
+			<staticText>
+				<reportElement x="22" y="0" width="109" height="20" isPrintInFirstWholeBand="true" isPrintWhenDetailOverflows="true"/>
+				<textElement>
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Notas de la Empresa:]]></text>
+			</staticText>
+		</band>
+		<band height="77">
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="23" y="4" width="511" height="70" isPrintWhenDetailOverflows="true"/>
+				<textElement>
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{obsNotasEmpresa}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="168">
+			<staticText>
+				<reportElement positionType="Float" x="16" y="56" width="150" height="20" isPrintInFirstWholeBand="true" isPrintWhenDetailOverflows="true"/>
+				<textElement>
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Fecha y hora de firma de Acta:]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement positionType="Float" x="32" y="80" width="233" height="76" isPrintInFirstWholeBand="true" isPrintWhenDetailOverflows="true"/>
+			</rectangle>
+			<rectangle>
+				<reportElement positionType="Float" x="265" y="80" width="248" height="76" isPrintInFirstWholeBand="true" isPrintWhenDetailOverflows="true"/>
+			</rectangle>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="49" y="137" width="202" height="17" isPrintWhenDetailOverflows="true"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{cargoTrabajador}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="49" y="120" width="202" height="17" isPrintWhenDetailOverflows="true"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{nombreTrabajador}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="286" y="120" width="202" height="17" isPrintWhenDetailOverflows="true"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{nombreTrabajadorOsi}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="286" y="137" width="202" height="17" isPrintWhenDetailOverflows="true"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{cargoOsi}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="169" y="55" width="137" height="17" isPrintWhenDetailOverflows="true"/>
+				<textElement>
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression class="java.lang.String"><![CDATA[$P{fechaHoraFirma}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="17" y="12" width="197" height="12" isPrintInFirstWholeBand="true" isPrintWhenDetailOverflows="true"/>
+				<textElement>
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DJ: Declaración Jurada por la Empresa.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="17" y="26" width="150" height="17" isPrintInFirstWholeBand="true" isPrintWhenDetailOverflows="true"/>
+				<textElement>
+					<font fontName="Arial" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[IS: Inspección de Supervisión.]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="52" splitType="Stretch">
+			<line>
+				<reportElement x="17" y="10" width="488" height="1"/>
+			</line>
+			<image isUsingCache="true">
+				<reportElement x="15" y="13" width="40" height="35"/>
+				<imageExpression class="java.io.InputStream"><![CDATA[$P{rutaImagenUkas}]]></imageExpression>
+			</image>
+			<image isUsingCache="true">
+				<reportElement x="482" y="13" width="51" height="29"/>
+				<imageExpression class="java.io.InputStream"><![CDATA[$P{rutaImagenSGS}]]></imageExpression>
+			</image>
+		</band>
+	</pageFooter>
+</jasperReport>

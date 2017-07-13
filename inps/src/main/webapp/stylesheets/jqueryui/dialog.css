@@ -1,0 +1,37 @@
+.ui-dialog .ui-dialog-titlebar
+{
+	background: #008CD9;
+	color: #FFF;
+	border: 2px solid #002C53;
+	padding: .6em 1em !important;
+	margin-top: 5px;
+}
+
+.ui-dialog .ui-dialog-titlebar-close
+{
+	background-image: url('../img/dialog.png') !important;
+	background-position: 0 0 !important;
+	width: 36px;
+	height: 36px;
+	cursor: pointer;
+	opacity: 1;
+	outline: none;
+	border: none !important;
+	margin-top: -18px !important;
+}
+
+.ui-dialog .ui-dialog-titlebar-close:hover
+{
+	background-position: 0 -36px !important;
+}
+
+.ui-dialog .ui-button-icon-primary,
+.ui-dialog .ui-button-text
+{
+	display: none;
+}
+
+.ui-dialog .ui-dialog-content
+{
+	color: #666;
+}

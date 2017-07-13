@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:jaxws="http://cxf.apache.org/jaxws"
+ xmlns:soap="http://cxf.apache.org/bindings/soap"
+ xmlns:context="http://www.springframework.org/schema/context"
+ xsi:schemaLocation="
+    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+    http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+    http://cxf.apache.org/bindings/soap http://cxf.apache.org/schemas/configuration/soap.xsd
+    http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd">
+
+    
+    <import resource="classpath:META-INF/cxf/cxf.xml"/>
+
+    <context:annotation-config/>
+    
+    <context:component-scan base-package="gob.osinergmin.inpsweb.remote"/>
+
+     <jaxws:client id="unidadSupervisadaClient" 
+                  serviceClass="gob.osinergmin.mdicommon.remote.UnidadSupervisadaEndpoint"
+                  address="${serverPort}/mdiws/remote/unidadSupervisadaWS?wsdl" />
+     <jaxws:client id="empresaSupervisadaClient" 
+                  serviceClass="gob.osinergmin.mdicommon.remote.EmpresaSupervisadaEndpoint"
+                  address="${serverPort}/mdiws/remote/empresaSupervisadaWS?wsdl" />
+     <jaxws:client id="UbigeoClient" 
+                  serviceClass="gob.osinergmin.mdicommon.remote.UbigeoEndpoint"
+                  address="${serverPort}/mdiws/remote/ubigeoWS?wsdl" />
+     <jaxws:client id="maestroColumnaClient" 
+                  serviceClass="gob.osinergmin.mdicommon.remote.MaestroColumnaEndpoint"
+                  address="${serverPort}/mdiws/remote/maestroColumnaWS?wsdl" />
+     <jaxws:client id="unidadOrganicaClient" 
+                  serviceClass="gob.osinergmin.mdicommon.remote.UnidadOrganicaEndpoint"
+                  address="${serverPort}/mdiws/remote/unidadOrganicaWS?wsdl" />
+     <jaxws:client id="locadorClient" 
+                  serviceClass="gob.osinergmin.mdicommon.remote.LocadorEndpoint"
+                  address="${serverPort}/mdiws/remote/locadorWS?wsdl" />
+     <jaxws:client id="supervisoraEmpresaClient" 
+                  serviceClass="gob.osinergmin.mdicommon.remote.SupervisoraEmpresaEndpoint"
+                  address="${serverPort}/mdiws/remote/supervisoraEmpresaWS?wsdl" />  	
+     <jaxws:client id="DireccionEmpresaClient" 
+                  serviceClass="gob.osinergmin.mdicommon.remote.DireccionEmpSupEndpoint"
+                  address="${serverPort}/mdiws/remote/direccionEmpSupWS?wsdl" />  
+     <jaxws:client id="EmpresaContactoEmpresaClient" 
+                  serviceClass="gob.osinergmin.mdicommon.remote.EmpresaContactoEndpoint"
+                  address="${serverPort}/mdiws/remote/empresaContactoWS?wsdl" />  
+     
+     <!-- OSINE_SFS-1063 - RSIS 04 - Inicio -->
+     <jaxws:client id="ZonaClient" 
+                  serviceClass="gob.osinergmin.dse_common.remote.ZonaEndpoint"
+                  address="${serverPortDse}/dse_eracg_ws/remote/zonaWS?wsdl" />
+	<jaxws:client id="SubEstacionClient" 
+                  serviceClass="gob.osinergmin.dse_common.remote.SubEstacionEndpoint"
+                  address="${serverPortDse}/dse_eracg_ws/remote/subEstacionWS?wsdl" />
+	<jaxws:client id="ReleClient" 
+                  serviceClass="gob.osinergmin.dse_common.remote.ReleEndpoint"
+                  address="${serverPortDse}/dse_eracg_ws/remote/releWS?wsdl" />
+    <jaxws:client id="EtapaClient" 
+                  serviceClass="gob.osinergmin.dse_common.remote.EtapaEndpoint"
+                  address="${serverPortDse}/dse_eracg_ws/remote/etapaWS?wsdl" />
+    <!-- OSINE_SFS-1063 - RSIS 04 - Fin -->             
+                  
+
+</beans>

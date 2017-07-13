@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<weblogic-web-app xmlns="http://xmlns.oracle.com/weblogic/weblogic-web-app" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd http://xmlns.oracle.com/weblogic/weblogic-web-app http://xmlns.oracle.com/weblogic/weblogic-web-app/1.4/weblogic-web-app.xsd">
+  <jsp-descriptor>
+    <keepgenerated>true</keepgenerated>
+    <debug>true</debug>
+  </jsp-descriptor>
+  <container-descriptor>
+    <prefer-application-packages>
+        <package-name>org.slf4j</package-name>
+        <package-name>c3p0</package-name>
+        <package-name>antlr.*</package-name>
+        <package-name>com.ctc.wstx.*</package-name>
+        <package-name>org.apache.*</package-name>
+        <package-name>org.springframework.*</package-name>
+        <package-name>antlr.*</package-name> 
+        <package-name>org.mozilla.*</package-name> 
+        <package-name>org.apache.xmlbeans.*</package-name> 
+        <package-name>org.apache.commons.*</package-name> 
+        <package-name>schemaorg_apache_xmlbeans.system.sXMLCONFIG.*</package-name> 
+        <package-name>schemaorg_apache_xmlbeans.system.sXMLLANG.*</package-name> 
+        <package-name>schemaorg_apache_xmlbeans.system.sXMLSCHEMA.*</package-name> 
+        <package-name>schemaorg_apache_xmlbeans.system.sXMLTOOLS.*</package-name> 
+    </prefer-application-packages>
+  </container-descriptor>
+  <context-root>inps</context-root>
+</weblogic-web-app>

@@ -1,0 +1,36 @@
+.ui-tabs  .ui-tabs-nav.ui-widget-header
+{
+	background: #016AA3;
+	border: 2px solid #002C53;
+}
+
+.ui-tabs .ui-state-default
+{
+	background: #FFF;
+	outline: none !important;
+}
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-active
+{
+	background: #002C53;
+	border: 1px solid #002C53;
+	border-bottom: none;
+	outline: none !important;
+	margin-top: 0;
+}
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-active a
+{
+	color: #FFF !important;
+	outline: none !important;
+}
+
+.ui-tabs .ui-tabs-nav li.ui-state-hover
+{
+	background: #002C53;
+}
+
+.ui-tabs .ui-tabs-nav li.ui-state-hover a
+{
+	color: #FFF !important;
+}

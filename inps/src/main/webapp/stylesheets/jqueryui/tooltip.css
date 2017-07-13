@@ -1,0 +1,31 @@
+.tooltip
+{
+/*   position: static; 
+   z-index: 197;*/
+	position: relative;
+        /*z-index:  1000001;*/
+}
+
+.tooltip:hover:after{
+	background: #3B4959;
+	border-radius: 5px;
+	bottom: 26px;
+	color: #FFF;
+	content: attr(data-title);
+	left: 20%;
+	padding: 5px 15px;
+	position: absolute;
+	z-index: 1001000;
+}
+
+.tooltip:hover:before
+{
+    border: solid;
+    border-color: #3B4959 transparent;
+    border-width: 6px 6px 0 6px;
+    bottom: 20px;
+    content: "";
+    left: 50%;
+    position: absolute;
+    z-index: 1001010;
+}
